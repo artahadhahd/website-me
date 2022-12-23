@@ -1,3 +1,24 @@
+.middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.sidebar {
+    background-color: rgb(148, 8, 8);
+    width: 4cm;
+    height: calc(101vh + 10vh);
+    position: absolute; 
+    left: 1px;
+    top:1px;
+    border-radius: 10px;
+}
+.change {
+    background-color: #2388da;
+}
+.line {
+    background-color: aliceblue;
+    height: 1px;
+    width: 125px;
+}
 #background-blue {
     background-color: #2388da;
     border-radius: 5px;
@@ -7,7 +28,8 @@
 #background-blue2 {
     background-color: #2388da;
     border-radius: 5px;
-    width: 100mm;
+    width: 25cm;
+    margin-top: -25px;
 }
 #font {
     color: white;
@@ -24,9 +46,6 @@
     width:100%;
     background-color: #232323;
 }
-html {
-    background-color: #232323;
-}
 #themebtn {
     float: left; 
     position: absolute; 
@@ -38,7 +57,6 @@ html {
     font-family:'Courier New', Courier, monospace; 
     border-color: #2388da;
 }
-.middle {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+html {
+    background-color: #232323;
 }
