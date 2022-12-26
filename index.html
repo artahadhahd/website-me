@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="My portofolio" content="I am jesus">
         <title>
             Portofolio
         </title>
@@ -13,9 +14,13 @@
                 <a href="./about.html" alt="About Me"><img class="aboutme" src="./jesus.jpg"></a>
             </div>
             <div>
-                <img src="./wave.png" style="height: 5cm; width: 5cm; position: absolute; margin-top: 3cm; margin-left: calc(100vw - 77vw); ">
-                <h1 style="color: white; position: absolute; margin-left: calc(100vw - 63vw); margin-top: 45mm; font-size: 2cm; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hello there!</h1>
+                <div class="animation">
+                    <img src="./wave.png" style="height: 5cm; width: 5cm; position: absolute; margin-top: 7vw; margin-left: 43vw;" onclick="animation()">
+                    <h1 style="color: white; position: absolute; margin-left: 37vw; margin-top: 20vw; font-size: 2cm; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hello there!</h1>
+                </div>
+                <div id="showtext"></div>
             </div>
+            <script src="./index.js"></script>
         </div>
     </body>
 </html>

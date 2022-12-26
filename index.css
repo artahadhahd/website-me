@@ -25,6 +25,21 @@
     top: 5px;
     margin: 1px;
 }
+.animation {
+    rotate: -10deg;
+    animation-duration: 1s;
+}
+.animate {
+    rotate: -10deg;
+}
+.text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    right: 22vw;
+    top: 10vw;
+    color: white;
+    font-size: 5mm;
+}
 #html {
     top: 0;
     left: 0;
