@@ -1,8 +1,17 @@
+var count = 1;
 function animation() {
     const doanimation = document.querySelectorAll(".animation");
-    [...doanimation].forEach((elem) => {
-        elem.style.rotate="30deg"
-    });
+    count++;
+    if (count % 2 == 0) {
+        [...doanimation].forEach((elem) => {
+            elem.style.rotate="30deg";
+        });
+    }
+    else {
+        [...doanimation].forEach((elem) => {
+            elem.style.rotate="-10deg";
+        });
+    }
     const showtext = document.querySelectorAll("#showtext");
     [...showtext].forEach((element) => {
         element.innerHTML = `
@@ -11,4 +20,5 @@ function animation() {
         sex:&nbsp;male</p>
         `;
     });
+    console.log(count);
 }

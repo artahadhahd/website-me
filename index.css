@@ -27,7 +27,7 @@
 }
 .animation {
     rotate: -10deg;
-    animation-duration: 1s;
+    transition: rotate 1s;
 }
 .animate {
     rotate: -10deg;
