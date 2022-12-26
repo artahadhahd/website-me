@@ -26,6 +26,7 @@
     margin: 1px;
 }
 .animation {
+    transform-origin: 43vw 19vw;
     rotate: -10deg;
     transition: rotate 1s;
 }

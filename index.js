@@ -1,18 +1,23 @@
 var count = 1;
 function animation() {
     const doanimation = document.querySelectorAll(".animation");
+    const showtext = document.querySelectorAll("#showtext");
     count++;
-    if (count % 2 == 0) {
+    if (count % 5 == 0){
         [...doanimation].forEach((elem) => {
-            elem.style.rotate="30deg";
+            elem.style.rotate="-360deg";
+        });
+    }
+    else if (count % 2 == 0) {
+        [...doanimation].forEach((elem) => {
+            elem.style.rotate="-20deg";
         });
     }
     else {
         [...doanimation].forEach((elem) => {
-            elem.style.rotate="-10deg";
+            elem.style.rotate="10deg";
         });
     }
-    const showtext = document.querySelectorAll("#showtext");
     [...showtext].forEach((element) => {
         element.innerHTML = `
         <p class="text">The W#5454<br>&nbsp;&nbsp;&nbsp;&nbsp;
