@@ -26,7 +26,7 @@
     margin: 1px;
 }
 .animation {
-    transform-origin: 43vw 19vw;
+    transform-origin: 20vw 20vw;
     rotate: -10deg;
     transition: rotate 1s;
 }
@@ -48,4 +48,8 @@
     height: 100%;
     width: 100vw;
     background-color: #230e0e;
+}
+.funny {
+    rotate: 0deg;
+    transition: rotate 0.5s;
 }

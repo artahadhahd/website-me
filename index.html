@@ -11,17 +11,35 @@
     <body style="overflow-x:hidden; overflow-y:hidden;">
         <div id="html">
             <div id="taskbar">
-                <a href="./about.html" alt="About Me"><img class="aboutme" src="./jesus.jpg"></a>
-                <a href="./socials.html" alt="contact me" style="position: absolute;"><button href="./socials.html">
-                    Social
-                </button></a>
+                <a href="./socials.html" alt="contact me">
+                    <button href="./socials.html"
+                    style="margin-top: 1mm;height: 50px; width: 100px; background-color: black; border-radius: 10px; color: white; font-size: 5mm; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-color: #000001;">
+                        Social
+                    </button>
+                </a>
             </div>
             <div>
                 <div class="animation" onclick="animation()">
-                    <img src="./wave.png" style="height: 5cm; width: 5cm; position: absolute; margin-top: 7vw; margin-left: 43vw;">
-                    <h1 style="color: white; position: absolute; margin-left: 37vw; margin-top: 20vw; font-size: 2cm; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hello there!</h1>
+                    <img src="./wave.png" style="height: 5cm; width: 5cm; position: absolute; margin-top: 7vw; margin-left: 10vw;">
                 </div>
-                <div id="showtext"></div>
+                <h1 onclick="animation()" style="color: white; position: absolute; margin-left: 5vw; margin-top: 21vw; font-size: 2cm; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hello there!</h1>
+            </div>
+            <!--My Description-->
+            <div>
+                <img class="funny" src="./pfp.jpg" style="position: absolute; border-radius: 100%; right: 250px; top: 100px;" onclick="funny()">
+                <center>
+                <h2 class="text" style="position: absolute; border-radius: 100%; right: 125px; top: 320px;">
+                    Hi, I'm The W#4545.<br>
+                    I am approximately 14 years old.<br>
+                    I do programming as a hobby<br>
+                    and I am relatively new (5 months)<br><br>
+                    I know Python, C and C++ mostly, <br>
+                    but I also have worked with R, JavaScript, Rust and C#.<br><br>
+                    I also know 4 languages:<br>
+                    Persian, English, German and French<br>
+                    I am learing Polish!
+                </h2>
+                </center>
             </div>
             <script src="./index.js"></script>
         </div>
