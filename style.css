@@ -22,6 +22,14 @@
 #text:hover {
     color: #00a6fb;
 }
+.banner {
+    margin-top: 10px;
+    height: 60vh;
+    background-color: #123456;
+    border-radius: 10px;
+    width: 25%;
+}
+
 /* start taskbar buttons and animations*/
 .button {
     text-align: center;
@@ -61,3 +69,15 @@ button:hover {
     transform: rotate(0deg);
 }
 /* End animation */
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 800px) {
+    #pfp {
+        height: 90px;
+    }
+    .button {
+        font-size: 0.25cm;
+    }
+}
