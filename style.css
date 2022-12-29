@@ -7,6 +7,7 @@
 #pfp {
     border-radius: 100%;
     transition: all 1s ease-in-out 0s;
+    margin-right: 25px;
 }
 #taskbar {
     width: 100%;
@@ -21,6 +22,7 @@
 }
 #text:hover {
     color: #00a6fb;
+    cursor: default;
 }
 .banner {
     margin-top: 10px;
@@ -45,6 +47,7 @@
 }
 button:hover {
     color: #00a6fb;
+    cursor:pointer;
 }
 /* end taskbar buttons and animations*/
 
@@ -63,6 +66,8 @@ button:hover {
     height: 100%;
     transform: rotate(720deg);
     transition: all 1s ease-in-out 0s;
+    transform-origin: 6vw 12vh;
+    transition-delay: 0.2s;
 }
 .flip-container:hover .flip-this {
     transition: 1s;
