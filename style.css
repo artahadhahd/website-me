@@ -6,15 +6,18 @@
 }
 #pfp {
     border-radius: 100%;
-    transition: all 1s ease-in-out 0s;
-    margin-right: 25px;
+    /*margin-right: 25px;*/
 }
 #taskbar {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 60px;
     background: #003554;
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
+    margin-bottom: 10px;
 }
 #text {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -66,7 +69,6 @@ button:hover {
     height: 100%;
     transform: rotate(720deg);
     transition: all 1s ease-in-out 0s;
-    transform-origin: 6vw 12vh;
     transition-delay: 0.2s;
 }
 .flip-container:hover .flip-this {
@@ -84,5 +86,10 @@ button:hover {
     }
     .button {
         font-size: 0.25cm;
+    }
+}
+@media only screen and (max-height: 500px) {
+    .banner {
+        height: 70vh;
     }
 }
