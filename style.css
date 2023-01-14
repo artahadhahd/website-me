@@ -5,6 +5,7 @@
     background-color: #051923;
 }
 #pfp {
+    height: 100px;
     border-radius: 100%;
     /*margin-right: 25px;*/
 }
@@ -16,7 +17,7 @@
     height: 60px;
     background: #003554;
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 2fr 5fr 0.5fr;
     margin-bottom: 10px;
 }
 #text {
@@ -29,10 +30,10 @@
 }
 .banner {
     margin-top: 10px;
-    height: 60vh;
+    height: 20rem;
     background-color: #123456;
     border-radius: 10px;
-    width: 25%;
+    width: 15rem;
 }
 
 /* start taskbar buttons and animations*/
@@ -85,11 +86,14 @@ button:hover {
         height: 90px;
     }
     .button {
-        font-size: 0.25cm;
+        font-size: 0.3cm;
+    }
+    .banner {
+        grid-template-columns: 2fr 5fr 2fr;
     }
 }
 @media only screen and (max-height: 500px) {
     .banner {
-        height: 70vh;
+        height: 18rem;
     }
 }
