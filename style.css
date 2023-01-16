@@ -1,7 +1,5 @@
 /* prussian blue #003554 */
-/* Alphabetically sorted, 
- * IDs have the priority and then classes.*/
- html {
+html {
     background-color: #051923;
 }
 #pfp {
@@ -96,4 +94,18 @@ button:hover {
     .banner {
         height: 18rem;
     }
+}
+.wrapper2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.contact {
+    display: grid; 
+    grid-template-columns: 0.2fr 1fr;
+}
+
+.image {
+    height: 2rem;
 }
