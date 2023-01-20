@@ -119,3 +119,7 @@ button:hover {
         margin-left: 0;
     }
 }
+
+body {
+    overflow-x:hidden;
+}
