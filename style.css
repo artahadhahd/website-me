@@ -1,11 +1,10 @@
 /* prussian blue #003554 */
-html {
+#background {
     background-color: #051923;
 }
 #pfp {
     height: 100px;
     border-radius: 100%;
-    /*margin-right: 25px;*/
 }
 #taskbar {
     position: absolute;
@@ -15,7 +14,7 @@ html {
     height: 60px;
     background: #003554;
     display: grid;
-    grid-template-columns: 2fr 5fr 0.5fr;
+    grid-template-columns: 2fr 4.5fr 0.5fr 0.1fr;
     margin-bottom: 10px;
 }
 #text {
@@ -23,7 +22,7 @@ html {
     color: antiquewhite;
 }
 #text:hover {
-    color: #00a6fb;
+    color: #040f4d;
     cursor: default;
 }
 .banner {
@@ -48,14 +47,26 @@ html {
     border: 0px;
 }
 button:hover {
-    color: #00a6fb;
+    color: #040f4d;
     cursor:pointer;
 }
 /* end taskbar buttons and animations*/
 
 .description {
     display: grid;
-    grid-template-columns: 10fr 1fr 10fr;
+    grid-template-columns:
+    10fr 1fr 10fr;
+}
+
+.theme {
+    margin-top: 1rem;
+    width: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 10px;
+    border: 0px;
+}
+.theme:hover {
+    cursor:pointer;
 }
 
 /* Animation */
@@ -75,26 +86,6 @@ button:hover {
     transform: rotate(0deg);
 }
 /* End animation */
-.wrapper {
-    display: flex;
-    justify-content: center;
-}
-@media only screen and (max-width: 800px) {
-    #pfp {
-        height: 90px;
-    }
-    .button {
-        font-size: 0.3cm;
-    }
-    .banner {
-        grid-template-columns: 2fr 5fr 2fr;
-    }
-}
-@media only screen and (max-height: 500px) {
-    .banner {
-        height: 18rem;
-    }
-}
 .wrapper2 {
     display: flex;
     justify-content: center;
@@ -108,4 +99,23 @@ button:hover {
 
 .image {
     height: 2rem;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 800px) {
+    #pfp {
+        height: 90px;
+    }
+    .button {
+        font-size: 0.3cm;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .theme {
+        width: 1.5rem;
+        margin-right: 0.5rem;
+        margin-left: 0;
+    }
 }
