@@ -21,8 +21,19 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: antiquewhite;
 }
+#text2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 4mm;
+
+}
 #text:hover {
-    color: #040f4d;
+    color: #0089d8;
+    cursor: default;
+}
+#text2:hover {
+    color: #0089d8;
     cursor: default;
 }
 .banner {
@@ -47,7 +58,7 @@
     border: 0px;
 }
 button:hover {
-    color: #040f4d;
+    color: #0089d8;
     cursor:pointer;
 }
 /* end taskbar buttons and animations*/
