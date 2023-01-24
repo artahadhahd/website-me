@@ -40,3 +40,11 @@ function background() {
         });
     }
 }
+
+function THEME() {
+    if (i % 2 == 0){
+        document.getElementById("background").style.backgroundColor = "rgb(61, 60, 60)";
+    }
+    else {document.getElementById("background").style.backgroundColor = "#FFF";}
+    ++i;
+}
