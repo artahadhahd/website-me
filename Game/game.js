@@ -1,5 +1,11 @@
 head = document.getElementById("head");
 apple = document.getElementById("apple");
+function getxpos(){
+    return previous_xpos = head.getBoundingClientRect().left;
+}
+function getypos(){
+    return head.getBoundingClientRect().top;
+}
 
 function changePosition()
 {
@@ -18,21 +24,32 @@ function changePosition()
     return [LEFT, TOP];
 }
 document.addEventListener('keydown', function(keyboard) {
-    previous_xpos = head.getBoundingClientRect().left;
-    previous_ypos = head.getBoundingClientRect().top;
     switch (keyboard.key)
     {
         case "ArrowRight":
-            head.style.left = (previous_xpos + 10).toString() + "px";
+            head.style.left = (getxpos() + 10).toString() + "px";
             break;
         case "ArrowLeft":
-            head.style.left = (previous_xpos - 10).toString() + "px";
+            head.style.left = (getxpos() - 10).toString() + "px";
             break;
         case "ArrowUp":
-            head.style.top = (previous_ypos - 10).toString() + "px";
+            head.style.top = (getypos() - 10).toString() + "px";
             break;
         case "ArrowDown":
-            head.style.top = (previous_ypos + 10).toString() + "px";
+            head.style.top = (getypos() + 10).toString() + "px";
             break;
     }
 });
+
+function up(){
+    head.style.top = (getypos() - 10).toString() + "px";
+}
+function down(){
+    head.style.top = (getypos() + 10).toString() + "px";
+}
+function left(){
+    head.style.left = (getxpos() - 10).toString() + "px";
+}
+function right(){
+    head.style.left = (getxpos() + 10).toString() + "px";
+}
