@@ -1,3 +1,17 @@
+/* RESERVED for future use
+var UP = false;
+var LEFT = false;
+var RIGHT = false;
+var DOWN = false;
+
+function reset(){
+    UP = false;
+    LEFT = false;
+    RIGHT = false;
+    DOWN = false;
+}
+*/
+
 head = document.getElementById("head");
 apple = document.getElementById("apple");
 function getxpos(){
@@ -6,41 +20,7 @@ function getxpos(){
 function getypos(){
     return head.getBoundingClientRect().top;
 }
-
-function changePosition()
-{
-    var height_maximum = 200;
-    var width_maximum = 1000;
-    var LEFT = Math.floor(Math.random() * (width_maximum - 10 + 1) + 10);
-    var TOP = Math.floor(Math.random() * (height_maximum - 10 + 1) + 10);
-    // The following code is written to keep the coordinates correct
-    // Rule: x,y mod 10 should be 0.
-    LEFT -= LEFT % 10;
-    TOP -= TOP % 10;
-    console.log(LEFT, TOP);
-    // -2 because for some reason the head cannot be aligned with the apple.
-    apple.style.left = (LEFT-2).toString() + "px";
-    apple.style.top = TOP.toString() + "px";
-    return [LEFT, TOP];
-}
-document.addEventListener('keydown', function(keyboard) {
-    switch (keyboard.key)
-    {
-        case "ArrowRight":
-            head.style.left = (getxpos() + 10).toString() + "px";
-            break;
-        case "ArrowLeft":
-            head.style.left = (getxpos() - 10).toString() + "px";
-            break;
-        case "ArrowUp":
-            head.style.top = (getypos() - 10).toString() + "px";
-            break;
-        case "ArrowDown":
-            head.style.top = (getypos() + 10).toString() + "px";
-            break;
-    }
-});
-
+/* Mobile support and essential move functions */
 function up(){
     head.style.top = (getypos() - 10).toString() + "px";
 }
@@ -53,3 +33,43 @@ function left(){
 function right(){
     head.style.left = (getxpos() + 10).toString() + "px";
 }
+
+// This function changes the position of the apple to a random position.
+function changePosition()
+{
+    var height_maximum = 200;
+    var width_maximum = 1000;
+    var LEFT = Math.floor(Math.random() * (width_maximum - 10 + 1) + 10);
+    var TOP = Math.floor(Math.random() * (height_maximum - 10 + 1) + 10);
+    // Rule: x,y mod 10 should be 0.
+    LEFT -= LEFT % 10;
+    TOP -= TOP % 10;
+    console.log(LEFT, TOP);
+    apple.style.left = (LEFT-2).toString() + "px";
+    apple.style.top = TOP.toString() + "px";
+    return [LEFT, TOP];
+}
+setInterval(changePosition, 2000);
+// Arrow key support (PC)
+document.addEventListener('keydown', function(keyboard) {
+    switch (keyboard.key)
+    {
+        case "ArrowRight":
+            // reset()
+            right()
+            RIGHT = true;
+            break;
+        case "ArrowLeft":
+            // reset()
+            left()
+            break;
+        case "ArrowUp":
+            // reset()
+            up()
+            break;
+        case "ArrowDown":
+            // reset()
+            down()
+            break;
+    }
+});
