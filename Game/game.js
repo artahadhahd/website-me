@@ -1,3 +1,5 @@
+head = document.getElementById("head");
+
 function changePosition()
 {
     apple = document.getElementById("apple");
@@ -19,12 +21,10 @@ function changePosition()
     apple.style.top = TOP.toString() + "px";
     return [LEFT, TOP]; // ^?
 }
-
-document.addEventListener('keydown', function(event) {
-    head = document.getElementById("head");
+document.addEventListener('keydown', function(keyboard) {
     previous_xpos = head.getBoundingClientRect().left;
     previous_ypos = head.getBoundingClientRect().top;
-    switch (event.key)
+    switch (keyboard.key)
     {
         case "ArrowRight":
             head.style.left = (previous_xpos + 10).toString() + "px";
