@@ -1,0 +1,10 @@
+body {
+    background-color: white;
+}
+
+.node {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: black;
+}
