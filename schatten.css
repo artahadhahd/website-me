@@ -1,0 +1,58 @@
+body {
+    background-color: aliceblue;
+}
+
+.light {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: antiquewhite;
+    border-radius: 100%;
+}
+.light:hover {
+    cursor: pointer;
+}
+
+#object {
+    display: flex;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 3px;
+}
+#object:hover {
+    transition: 0;
+    cursor: grab;
+}
+
+/* These have the same name but they have to be IDs due to (simplification) JavaScript code. */
+/* I could also do it with classes but this looks neater to work with in JS. */
+#object-sizev,
+#object-sizeh {
+    appearance: none;
+    width: 10rem;
+    height: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    outline: 1rem;
+    right: 1rem;
+    cursor:col-resize;
+}
+
+#object-sizev:hover,
+#object-sizeh:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#obj-sz {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* When the screen gets smaller funky stuff may happen- for future use */
+/* @media screen and (max-width: 500px) {
+
+} */

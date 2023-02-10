@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Schatten</title>
+        <link rel="stylesheet" href="./schatten.css">
+    </head>
+    <body>
+        <div id="obj-sz">
+            <div>
+                <label for="object-size">V</label>
+                <input type="range" min="0" max="1000" id="object-sizev" name="object-size">
+            </div>
+            <div>
+                <label for="object-size">H</label>
+                <input type="range" min="0" max="1000" id="object-sizeh" name="object-size">
+            </div>
+        </div>
+        <div class="light"></div>
+        <div id="object"></div>
+        <script src="./schatten.js"></script>
+    </body>
+</html>

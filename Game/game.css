@@ -1,6 +1,9 @@
 body {
     background-color: #4ea334;
 }
+body div {
+    outline: 1px red !important;
+}
 #apple {
     position: absolute;
     height: 10px;
