@@ -8,17 +8,23 @@
         <link rel="stylesheet" href="./schatten.css">
     </head>
     <body>
-        <div id="obj-sz">
-            <div>
-                <label for="object-size">V</label>
-                <input type="range" min="0" max="1000" id="object-sizev" name="object-size">
-            </div>
-            <div>
-                <label for="object-size">H</label>
-                <input type="range" min="0" max="1000" id="object-sizeh" name="object-size">
+        <div class="center">
+            <div id="obj-sz">
+                <div>
+                    <label for="object-size">V</label>
+                    <input type="range" min="0" max="1000" id="object-sizev" name="object-size">
+                </div>
+                <div>
+                    <label for="object-size">H</label>
+                    <input type="range" min="0" max="1000" id="object-sizeh" name="object-size">
+                </div>
+                <div>
+                    <label for="object-rotation">Rotation</label>
+                    <input type="range" min="0" max="360" id="object-rotation" name="object-rotation">
+                </div>
             </div>
         </div>
-        <div class="light"></div>
+        <div class="light"><div class="lamp"></div></div>
         <div id="object"></div>
         <script src="./schatten.js"></script>
     </body>

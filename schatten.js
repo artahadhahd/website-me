@@ -1,11 +1,19 @@
 const obj = document.getElementById('object');
+const lamp = document.getElementsByClassName('lamp');
 obj.addEventListener('mousedown', mouseDown, false);
 window.addEventListener('mouseup', mouseUp, false);
+
+function light(){
+    return ''
+}
+lamp[0].addEventListener('mousedown', (movelight) => {
+    obj.style.top = movelight.target.value + 'px';
+}, false);
 
 var Yoffset = 25;
 var Xoffset = 25;
 
-// These are the sliders which change <div class="object">'s size, via the DOM.
+// These are the sliders which change <div id="object">'s size, via the DOM.
 const sliderV = document.getElementById('object-sizev').addEventListener('input', (e) => {
     obj.style.width = e.target.value + 'px';
     Xoffset = Math.round(e.target.value / 2)
@@ -13,6 +21,9 @@ const sliderV = document.getElementById('object-sizev').addEventListener('input'
 const sliderH = document.getElementById('object-sizeh').addEventListener('input', (e) => {
     obj.style.height = e.target.value + 'px';
     Yoffset = Math.round(e.target.value / 2);
+});
+const sliderR = document.getElementById('object-rotation').addEventListener('input', (e) => {
+    obj.style.rotate = e.target.value + 'deg';
 });
 
 // These two functions define that the div should move only while left click is held.

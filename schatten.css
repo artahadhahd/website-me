@@ -3,13 +3,26 @@ body {
 }
 
 .light {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    opacity: 0.5;
+    background-color: rebeccapurple;
+}
+
+
+.lamp {
     position: absolute;
     width: 50px;
     height: 50px;
     background-color: antiquewhite;
     border-radius: 100%;
+    transform: translateY(450%);
 }
-.light:hover {
+.lamp:hover {
     cursor: pointer;
 }
 
@@ -28,6 +41,7 @@ body {
 
 /* These have the same name but they have to be IDs due to (simplification) JavaScript code. */
 /* I could also do it with classes but this looks neater to work with in JS. */
+#object-rotation,
 #object-sizev,
 #object-sizeh {
     appearance: none;
@@ -40,19 +54,17 @@ body {
     cursor:col-resize;
 }
 
+#object-rotation:hover,
 #object-sizev:hover,
 #object-sizeh:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 #obj-sz {
+    padding: 1rem;
+    margin-bottom: 10px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-/* When the screen gets smaller funky stuff may happen- for future use */
-/* @media screen and (max-width: 500px) {
-
-} */
