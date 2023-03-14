@@ -1,7 +1,10 @@
 body {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0);
     overflow-x: hidden;
     overflow-y: hidden;
+}
+body:hover {
+    cursor: alias;
 }
 
 #top-decoration {
@@ -54,12 +57,21 @@ body {
 }
 
 .center {
+    height: 100vh;
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-#recenter {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    height: 37rem;
+#america {
+    display: inline-flex;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1s;
+}
+
+#america:hover {
+    cursor:vertical-text; 
+    color: #C71585;
 }
